@@ -1,0 +1,154 @@
+.how-it-works {
+  padding-top: 169px;
+  padding-bottom: 51px;
+  overflow: hidden;
+  height: 1920px;
+}
+
+.how-it-works-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.how-it-works-header-head {
+  min-width: 596px;
+}
+.how-it-works-header > * + * {
+  margin-left: 136px;
+}
+.how-it-works-header-subtitle {
+  font-size: 24px;
+  line-height: 157%;
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+}
+.how-it-works-header-content {
+  padding-top: 58px;
+  max-width: 671px;
+  line-height: 150%;
+}
+.how-it-works-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30%);
+  column-gap: 50px;
+  padding-top: 80px;
+}
+
+.step {
+  position: relative;
+  max-width: 100%;
+  height: 710px;
+}
+.step:nth-child(2) {
+  padding-top: 85%;
+}
+
+.step:nth-child(3) {
+  padding-top: 26%;
+}
+
+.step-heading {
+  position: relative;
+  padding-top: 135px;
+  padding-left: 88px;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 55px;
+  line-height: 150%;
+}
+.step-heading::before {
+  top: 105px;
+  left: 0px;
+  position: absolute;
+  content: attr(data-number);
+  font-size: 4em;
+  color: #01996d;
+  opacity: 0.25;
+}
+.step-text {
+  font-weight: 500;
+  line-height: 150%;
+  color: #424242;
+  margin-bottom: 60px;
+}
+.step-img-wrapper {
+  position: relative;
+  padding-bottom: 126%;
+}
+.step-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1285px) {
+  .how-it-works-header > * + * {
+    margin-left: 30px;
+  }
+
+  .how-it-works-steps {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 998px) {
+  .how-it-works {
+    height: 1700px;
+  }
+  .how-it-works-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-it-works-header > * + * {
+    margin-left: 0px;
+  }
+  .how-it-works-header-content {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 625px) {
+  .how-it-works {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 3100px;
+  }
+  .how-it-works-header-head {
+    min-width: 100%;
+  }
+  .how-it-works-header-subtitle {
+    line-height: 115%;
+    margin-bottom: 15px;
+  }
+  .how-it-works-steps {
+    overflow: hidden;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 290px;
+  }
+  .step {
+    height: 610px;
+  }
+  .step:nth-child(2) {
+    padding-top: 0px;
+  }
+  .step:nth-child(3) {
+    padding-top: 0px;
+  }
+  .step-text,
+  .step-heading {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .how-it-works {
+    height: 2500px;
+  }
+  .how-it-works-steps {
+    row-gap: 100px;
+  }
+}

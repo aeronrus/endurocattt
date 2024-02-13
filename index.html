@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Стили-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/blocks/btn.css" />
+    <link rel="stylesheet" href="css/blocks/header.css" />
+    <link rel="stylesheet" href="css/blocks/home.css" />
+    <link rel="stylesheet" href="css/blocks/how-it-works.css" />
+    <link rel="stylesheet" href="css/blocks/story.css" />
+
+    <script defer src="./js/main.js"></script>
+
+
+
+    <title>Endurocattt</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-row">
+          <div class="header-logo">
+            <img src="./assets/icons/logo.jpg" alt="Logo">
+          </div>
+          <nav class="header-nav">
+            <ul>
+              <li>
+                <a href="##">О нас</a>
+              </li>
+              <li>
+                <a href="#">Цены</a>
+              </li>
+              <li>
+                <a href="#">Техника</a>
+              </li>
+              <li>
+                <a href="#">Где мы находимся</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-login">
+           <a class="header-login-link">Задать вопрос</a><a class="btn" href="#">Записаться</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <div class="container">
+        <div class="home-content">   
+          <h1 class="home-heading">Почему именно мы?</h1>
+          <div class="home-text">
+            <p>Лучшие цены + Отзывчивый персонал = Активный отдых на природе по доступной цене.</p>
+          </div>
+          <div class="home-btn"><a class="btn btn-big" href="#">Хочу якрие эмоции!</a></div>
+        </div>
+      </div>
+      <div class="home-bg-img">
+        <img src="./assets/pictures/main (2).jpg" alt="" >
+      </div>
+    </section>
+    <section class="how-it-works">
+      <div class="container">
+        <div class="how-it-works-header">
+          <div class="how-it-works-header-head">
+            <p class="how-it-works-header-subtitle">А если я не умею кататься на мотоцикле?</p>
+            <h2 class="home-heading">
+              Не умеешь? <br />
+              Мы научим за 60 минут!
+            </h2>
+          </div>
+          <p class="how-it-works-header-content">
+            Учим детей и взрослых<br />
+            Большой выбор техники и экипировки<br />
+            Захватывающая трасса с горками или интересный лесной маршрут?<br />
+            Выбор за вами!
+          </p>
+        </div>
+        <div class="how-it-works-steps">
+          <div class="step">
+            <h4 class="step-heading" data-number="01">Мотокросс</h4>
+            <div class="step-text">
+              <p>
+                Захватывающая трасса с горками!<br />Испытай себя на прочность и получи свою порцию
+                адреналина, преодолев трамплины, резкие спуски и подъемы
+              </p>
+            </div>
+            <div class="step-img-wrapper">
+              <img src="./assets/pictures/sw12.png" alt="Трасса" class="step-img" />
+            </div>
+          </div>
+
+          <div class="step">
+            <h4 class="step-heading" data-number="02">Эндуро в лесу</h4>
+            <div class="step-text">
+              <p>
+                Лесной маршрут с живописными видами!<br />Отдохни от городской суеты и окунись в
+                красоту природы, забыв обо всех проблемах на 2 часа
+              </p>
+            </div>
+            <div class="step-img-wrapper">
+              <img src="./assets/pictures/mor705.png" alt="Step img" class="step-img" />
+            </div>
+          </div>
+
+          <div class="step">
+            <h4 class="step-heading" data-number="03">Мини-путешествие</h4>
+            <div class="step-text">
+              <p>
+                Затяжной маршрут вдоль водохранилища<br />Преодолей более 10км лесного маршрута в
+                компании друзей и прекрасных видов водохранилища
+              </p>
+            </div>
+            <div class="step-img-wrapper">
+              <img src="./assets/pictures/son22.png" alt="Step img" class="step-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="story">
+      <div class="container">
+        <div class="stort-row">
+          <div class="story-content">
+            <div class="story-content-heading">Как проходят наши покатушки?</div>
+            <div class="story-text">
+              <p>Взгляни на видео, а лучше приезжай и насладись эмоциями вживую!</p>
+            </div>
+            <div class="story-btn">
+              <a href="#" class="btn btn-big">Записаться</a>
+            </div>
+          </div>
+          <div class="story-video">
+            <div class="story-video-overlay">  
+              <button class="story-video-btn">   
+              <img width="70" height="70" id="play" src="./assets/icons/play2.svg" alt="">
+             </button>  
+            </div>  
+             <video class="story-video-object">
+              <source src="./assets/video/STREET eng.mp4" type="video/mp4">
+             </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
